@@ -33,6 +33,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  padding-top: 0.5rem;
 
   min-height: 8vh;
   font-family: "Spartan", sans-serif;
@@ -151,8 +152,8 @@ span {
   bottom: 10%;
   left: 4%;
   width: 30%;
-  height: 25%;
-  padding: 1.5rem 1rem;
+  height: 27%;
+  padding: 2rem 1rem;
   border-radius: 15px;
   display: flex;
   align-items: flex-start;
@@ -163,7 +164,7 @@ span {
 }
 
 .hero-text h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   padding-bottom: 1rem;
 }
 .hero-text p {
@@ -194,8 +195,8 @@ span {
   background-color: var(--main-bg);
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .services-container {
@@ -214,13 +215,12 @@ span {
 }
 
 .services {
-  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
 }
 
 .services p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: left;
 }
 
@@ -228,8 +228,8 @@ span {
 .service2,
 .service3,
 .service4 {
-  padding: 2.5rem 1rem;
-  width: 15vw;
+  padding: 1rem 1rem 2rem 1rem;
+  width: 17vw;
   border-radius: 1rem;
 }
 
@@ -283,7 +283,7 @@ span {
 }
 .horizontal-split-text p {
   color: var(--main-black);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .horizontal-split-image {
@@ -311,8 +311,8 @@ span {
   color: var(--main-white);
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .strengths-container {
@@ -353,9 +353,10 @@ span {
 /* --------------------------------------  Footer SECTION   ---------------------------------------- */
 
 .footer-section {
-  height: 80vh;
+  /* height: 80vh; */
   background-color: var(--main-bg);
   color: var(--main-white);
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -765,10 +766,18 @@ input[type="checkbox"] {
   background-size: contain;
 }
 
-@media screen and (max-width: 1524px) {
-  /* .corporateResp-section {
-    padding: 4rem 18rem 6rem 18rem;
-  } */
+@media screen and (max-width: 1700px) {
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+
+  .hero-text {
+    /* background-color: red; */
+  }
 
   .logo {
     margin-left: 4rem;
@@ -780,12 +789,21 @@ input[type="checkbox"] {
     right: 4rem;
   }
 
-  .hero-text h2 {
-    font-size: 3rem;
+  .services-section {
+    padding: 3rem 0rem;
   }
 
-  .hero-text p {
-    font-size: 1.4rem;
+  .services h2 {
+    font-size: 2.5rem;
+  }
+
+  .services p {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .service-logo {
+    font-size: 4rem;
   }
 
   .footer-socials {
@@ -794,11 +812,6 @@ input[type="checkbox"] {
 
   .footer-split-right {
     padding: 6rem 2rem;
-  }
-
-  .services p {
-    font-size: 1.1rem;
-    text-align: left;
   }
 
   .contact-section {
@@ -810,7 +823,18 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1560px) {
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .hero-text {
+    /* background-color: blue; */
+  }
   .logo {
     margin-left: 2rem;
   }
@@ -820,14 +844,6 @@ input[type="checkbox"] {
   }
   .cta {
     right: 2rem;
-  }
-
-  .hero-text h2 {
-    font-size: 2.5rem;
-  }
-
-  .hero-text p {
-    font-size: 1.3rem;
   }
 
   .footer-links {
@@ -853,8 +869,11 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1260px) {
   /* HAMBURGER NAV SECTION */
+  .hero-text {
+    /* background-color: rgb(88, 88, 0); */
+  }
 
   .hero-text h2 {
     font-size: 2.2rem;
@@ -866,6 +885,8 @@ input[type="checkbox"] {
 }
 
 /* 
+
+
 
 @media screen and (max-width: 768px) {
   .nav-links {
