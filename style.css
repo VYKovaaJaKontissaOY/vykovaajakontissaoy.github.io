@@ -34,6 +34,7 @@ nav {
   align-items: center;
   position: relative;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   min-height: 8vh;
   font-family: "Spartan", sans-serif;
@@ -42,7 +43,7 @@ nav {
 h1 {
   font-family: "Ubuntu", sans-serif;
   color: var(--main-white);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -195,7 +196,7 @@ span {
   background-color: var(--main-bg);
   display: flex;
   justify-content: center;
-  padding-top: 4rem;
+  padding-top: 2.5rem;
   padding-bottom: 4rem;
 }
 
@@ -207,7 +208,7 @@ span {
 }
 
 .services-container h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .services-container h2 {
@@ -252,13 +253,14 @@ span {
 
 .about-section {
   background-color: var(--main-white);
-  padding: 6rem 4rem;
+  padding: 4rem 6rem;
 }
 
 .vertical-split1,
 .vertical-split2 {
   display: flex;
   flex-direction: row;
+  align-items: ce;
   gap: 4rem;
 }
 
@@ -267,7 +269,7 @@ span {
 }
 
 .horizontal-split-text {
-  width: 70vw;
+  width: 60%;
 }
 
 .horizontal-split-text h1 {
@@ -287,21 +289,23 @@ span {
 }
 
 .horizontal-split-image {
-  width: 33vw;
-  height: 27vh;
+  width: 40%;
+  height: 13vw;
   border-radius: 1rem;
   background-image: url(photo-1568992688065-536aad8a12f6.jfif);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .vertical-split-logo {
-  width: 18.7vw;
-  height: 20vh;
+  width: 15%;
+  height: 13.5vw;
   flex-shrink: 0;
   background-image: url(Kovaa_ja_Kontissa.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* --------------------------------------  STRENGHTS SECTION   ---------------------------------------- */
@@ -311,8 +315,8 @@ span {
   color: var(--main-white);
   display: flex;
   justify-content: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 
 .strengths-container {
@@ -328,7 +332,7 @@ span {
 }
 
 .strengths {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
@@ -341,13 +345,13 @@ span {
 .strength1,
 .strength2,
 .strength3 {
-  padding: 2.5rem 1rem;
+  padding: 0rem 1rem;
   width: 25vw;
 }
 
 .strength-logo {
   margin: 1.2rem 0;
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 /* --------------------------------------  Footer SECTION   ---------------------------------------- */
@@ -484,10 +488,10 @@ span {
   background-color: var(--darker-green-bg);
   color: var(--main-white);
   padding: 0rem 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 .service-explained {
-  padding-top: 6rem;
+  padding-top: 3rem;
   display: flex;
   gap: 6rem;
   align-items: center;
@@ -499,13 +503,9 @@ span {
   font-family: "Vollkorn", serif;
   font-weight: 100;
   margin-bottom: 0.5rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
-.service-explained-text h2 {
-  color: var(--services-color);
-  margin-bottom: 1rem;
-  font-size: 1.9rem;
-}
+
 .service-explained-text p {
   font-size: 1.3rem;
 }
@@ -535,10 +535,6 @@ span {
   background-image: url("Kylmä.jfif");
 
   background-position: 0% 40%;
-}
-
-.flipped {
-  text-align: right;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -806,6 +802,14 @@ input[type="checkbox"] {
     font-size: 4rem;
   }
 
+  .service-explained-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .service-explained-text p {
+    font-size: 1.2rem;
+  }
+
   .footer-socials {
     margin-left: 4rem;
   }
@@ -846,6 +850,33 @@ input[type="checkbox"] {
     right: 2rem;
   }
 
+  .services-container h1 {
+    font-size: 2.5rem;
+  }
+  .services-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .strengths-container h1 {
+    font-size: 2.5rem;
+  }
+  .strengths-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .horizontal-split-image {
+    width: 40%;
+    height: 16vw;
+  }
+
+  .strengths p {
+    font-size: 1.2rem;
+  }
+
+  .strength-logo {
+    font-size: 4rem;
+  }
+
   .footer-links {
     font-size: 1.1rem;
   }
@@ -864,8 +895,13 @@ input[type="checkbox"] {
   }
 
   .service-explained {
+    padding: 0rem 3rem 0rem 3rem;
     padding-top: 3rem;
     gap: 6rem;
+  }
+
+  .services-explained {
+    padding: 0rem 0rem 4rem 0rem;
   }
 }
 
@@ -881,6 +917,16 @@ input[type="checkbox"] {
 
   .hero-text p {
     font-size: 1.2rem;
+  }
+
+  .horizontal-split-image {
+    width: 40%;
+    height: 19vw;
+  }
+
+  .vertical-split-logo {
+    width: 25%;
+    height: 20vw;
   }
 }
 
