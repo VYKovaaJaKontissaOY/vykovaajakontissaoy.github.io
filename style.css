@@ -1,0 +1,731 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-black: #000000;
+  --main-white: #e3e6dd;
+  --main-bg: #284629;
+  --second-bg: #1f1f1f;
+  --darker-green-bg: #243e1c;
+  --services-color: #86bc65;
+  --cta-button: #7eff75;
+  --cta-button-hover: #fdff6e;
+  --cta-button-active: #f59c38;
+  --btn-hover: #186e03;
+  --btn-active: #1b3601;
+  --header-highlight: #036419;
+  --header-text-lighter: #8f6141;
+  --footer-nav: #192c13;
+  --hover-social: #b1cd40;
+  --input-bg: #f2ffdd;
+}
+
+body {
+  background-color: #284629;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  min-height: 8vh;
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--main-white);
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: var(--main-white);
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: var(--main-white);
+  font-family: "Bitter", serif;
+  font-weight: 300;
+}
+
+span {
+  color: var(--header-highlight);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin-left: 4rem;
+  font-size: 1.2rem;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-left: 8rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--main-black);
+  font-family: "Atma", cursive;
+  font-size: 32px;
+}
+
+.cta {
+  margin-left: 20rem;
+  position: absolute;
+  right: 8rem;
+  background-color: var(--cta-button);
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.cta a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+.cta:hover {
+  background-color: var(--cta-button-hover);
+}
+.cta:active {
+  background-color: var(--cta-button-active);
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: var(--main-black);
+  margin: 5px;
+}
+
+/* --------------------------------------  HERO SECTION   ---------------------------------------- */
+
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(6, 68, 13, 0.4) 8.78%,
+      rgba(103, 191, 181, 0.18) 83.78%
+    ),
+    url("photo-1597685204565-110abf469a1e.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: 0rem 75%;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  width: 35%;
+  height: 35%;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #062204cc;
+  color: var(--main-white);
+}
+
+.hero-text h2 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+.hero-text p {
+  padding-bottom: 1.5rem;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  border: 2px solid var(--main-white);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+.btn:active {
+  background-color: var(--btn-active);
+}
+
+/* --------------------------------------  SERVICES SECTION   ---------------------------------------- */
+
+.services-section {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.services-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services-container h1 {
+  margin-bottom: 2rem;
+}
+
+.services-container h2 {
+  font-size: 3rem;
+}
+
+.services {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.services p {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.service1,
+.service2,
+.service3,
+.service4 {
+  padding: 2.5rem 1rem;
+  width: 15vw;
+  border-radius: 1rem;
+}
+
+.service1,
+.service3 {
+  background-color: var(--services-color);
+}
+
+.service2,
+.service4 {
+  color: var(--main-white);
+}
+
+.service-logo {
+  margin: 1.5rem 0;
+  font-size: 5rem;
+}
+
+/* --------------------------------------  ABOUT SECTION   ---------------------------------------- */
+
+.about-section {
+  background-color: var(--main-white);
+  padding: 6rem 4rem;
+}
+
+.vertical-split1,
+.vertical-split2 {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.vertical-split2 {
+  margin-top: 4rem;
+}
+
+.horizontal-split-text {
+  width: 70vw;
+}
+
+.horizontal-split-text h1 {
+  color: var(--main-black);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.horizontal-split-text h2 {
+  color: var(--header-text-lighter);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.horizontal-split-text p {
+  color: var(--main-black);
+  font-size: 1.4rem;
+}
+
+.horizontal-split-image {
+  width: 33vw;
+  height: 33vh;
+  border-radius: 1rem;
+  background-image: url(photo-1568992688065-536aad8a12f6.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vertical-split-logo {
+  width: 18.7vw;
+  height: 20vh;
+  background-image: url(Kovaa_ja_Kontissa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* --------------------------------------  STRENGHTS SECTION   ---------------------------------------- */
+
+.strengths-section {
+  background-color: var(--second-bg);
+  color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.strengths-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.strengths-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.strengths {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.strengths p {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.strength1,
+.strength2,
+.strength3 {
+  padding: 2.5rem 1rem;
+  width: 15vw;
+}
+
+.strength-logo {
+  margin: 1.2rem 0;
+  font-size: 8rem;
+}
+
+/* --------------------------------------  Footer SECTION   ---------------------------------------- */
+
+.footer-section {
+  height: 80vh;
+  background-color: var(--main-bg);
+  color: var(--main-white);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-split-left {
+  padding: 6rem 4rem;
+  width: 80vw;
+  display: flex;
+}
+.footer-split-right {
+  padding: 6rem 4rem;
+  width: 20vw;
+  background-color: var(--footer-nav);
+}
+
+.footer-logo {
+  width: 12.6vw;
+  height: 25vh;
+  background-image: url(Kovaa_ja_Kontissa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer-socials-logo {
+  font-size: 2rem;
+}
+
+.footer-text {
+  margin-left: 4rem;
+}
+
+.footer-socials {
+  margin-left: 30rem;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  height: 3rem;
+}
+
+.footer-socials a {
+  display: inline;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  color: var(--main-white);
+}
+
+.footer-socials a:hover {
+  color: var(--hover-social);
+}
+
+.footer-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 1.4rem;
+  font-family: "Spartan", sans-serif;
+}
+
+.footer-links li {
+  list-style: none;
+}
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-white);
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+
+.footer-links li :hover {
+  background-color: #061a04;
+}
+
+.footer-map {
+  width: 100%;
+  height: 25vh;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------  SERVICES PAGE   ---------------------------------------- */
+/* --------------------------------------  SERVICES PAGE  ---------------------------------------- */
+/* --------------------------------------  SERVICES PAGE   ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+
+.services-logo a {
+  color: var(--main-white);
+}
+
+.services-nav-links a {
+  color: var(--main-white);
+}
+
+.navigation-header {
+  background-color: var(--footer-nav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.navigation-header h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+/* --------------------------------------  SERVICES SECTION   ---------------------------------------- */
+
+.services-explained {
+  background-color: var(--darker-green-bg);
+  color: var(--main-white);
+  padding: 0rem 4rem;
+  padding-bottom: 8rem;
+}
+.service-explained {
+  padding-top: 6rem;
+  display: flex;
+  gap: 6rem;
+}
+.service-explained-text {
+  width: 70%;
+}
+.service-explained-text h3 {
+  font-family: "Vollkorn", serif;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+.service-explained-text h2 {
+  color: var(--services-color);
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+}
+.service-explained-text p {
+  font-size: 1.3rem;
+}
+.service-explained-picture {
+  background-color: red;
+  width: 30%;
+  height: 25vh;
+}
+
+.flipped {
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------  VEHICLES PAGE  ---------------------------------------- */
+/* --------------------------------------  VEHICLES PAGE   ---------------------------------------- */
+/* --------------------------------------  VEHICLES PAGE   ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+
+.vehicles-section {
+  padding: 4rem 6rem 8rem 6rem;
+  background-color: var(--darker-green-bg);
+  display: flex;
+  gap: 20rem;
+}
+
+.vehicle {
+  color: var(--main-white);
+}
+
+.vehicle h3 {
+  margin-bottom: 1rem;
+}
+
+.vehicle h2 {
+  color: var(--services-color);
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.vehicle p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.vehicle-picture {
+  width: 100%;
+  height: 20rem;
+  background-color: red;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------  CORPORATE RESPONSIBILITY PAGE  ---------------------------------------- */
+/* --------------------------------------  CORPORATE RESPONSIBILITY PAGE   ---------------------------------------- */
+/* --------------------------------------  CORPORATE RESPONSIBILITY PAGE   ---------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.corporateResp-section {
+  padding: 4rem 32rem 6rem 32rem;
+  background-color: var(--darker-green-bg);
+  color: var(--main-white);
+}
+
+.corporateResp-section h3 {
+  font-family: "Vollkorn", serif;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.corporateResp-section h2 {
+  color: var(--services-color);
+  margin-bottom: 0.2rem;
+  font-size: 1.9rem;
+}
+.corporateResp-section p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------  CONTACT PAGE  ----------------------------------------------- */
+/* -------------------------------------------------  CONTACT PAGE  ----------------------------------------------- */
+/* -------------------------------------------------  CONTACT PAGE  ----------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.contact-section {
+  background-color: var(--darker-green-bg);
+  color: var(--main-white);
+  padding: 4rem 28rem 6rem 28rem;
+}
+
+.kuljetustarve-label {
+  font-family: "Amatic SC", cursive;
+}
+
+.checkbox-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  /* font-family: "Amatic SC", cursive; */
+  font-size: 2rem;
+}
+
+.checkboxes {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxes label {
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.kuljetustarve-header-div {
+  margin-bottom: 1rem;
+}
+
+.input-section {
+  font-family: "Amatic SC", cursive;
+}
+
+input {
+  padding: 0.5rem 2rem;
+  background-color: var(--input-bg);
+  border: none;
+  border-radius: 5px;
+}
+
+textarea {
+  background-color: var(--input-bg);
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  zoom: 1.7;
+  border: none;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.input-left {
+  display: flex;
+  width: 50%;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+.input-right {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.input-section {
+  margin-bottom: rem;
+}
+
+.textarea-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-button {
+  background-color: #036419;
+  font-size: 1.4rem;
+  padding: 1rem 6rem;
+  border: none;
+  border-radius: 15px;
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 1524px) {
+  .logo {
+    margin-left: 4rem;
+  }
+  .nav-links {
+    width: 30%;
+  }
+  .cta {
+    right: 4rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .logo {
+    margin-left: 1rem;
+  }
+  .nav-links {
+    margin-left: 2rem;
+    width: 35%;
+  }
+  .cta {
+    right: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-links {
+    width: 40%;
+    background-color: red;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 1rem;
+    height: 40vh;
+    top: 8vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta {
+    position: absolute;
+    right: 7rem;
+    top: 48vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
