@@ -66,6 +66,10 @@ span {
   color: var(--header-highlight);
 }
 
+.hidden {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -120,15 +124,18 @@ span {
   background-color: var(--cta-button-active);
 }
 
-.burger {
+.checkbtn {
+  font-size: 3rem;
+  color: var(--main-white);
+  margin-left: auto;
+  order: 2;
+  margin-right: 2rem;
+  cursor: pointer;
   display: none;
 }
 
-.burger div {
-  width: 25px;
-  height: 2px;
-  background-color: var(--main-black);
-  margin: 5px;
+#check {
+  display: none;
 }
 
 /* --------------------------------------  HERO SECTION   ---------------------------------------- */
@@ -930,28 +937,254 @@ input[type="checkbox"] {
   }
 }
 
-/* 
+@media screen and (max-width: 1000px) {
+  /* -------------------------------------------------- Nav SECTION ---------------------------------------------- */
+  .checkbtn {
+    display: flex;
+  }
 
+  nav {
+    background-color: var(--main-bg);
+    position: fixed;
+    width: 100%;
+  }
 
+  .logo a {
+    color: var(--main-white);
+  }
 
-@media screen and (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    right: 1rem;
-    height: 40vh;
-    top: 8vh;
-    background-color: aquamarine;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 68px;
+    left: -100%;
+    background-color: rgba(27, 31, 7, 0.915);
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    z-index: 999;
+  }
+
+  .nav-links li {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
+
+  .nav-links li a {
+    padding: 3vh 20vw;
+    border-radius: 5px;
+    color: var(--main-white);
+  }
+  .nav-links li a:hover {
+    background-color: rgb(42, 117, 39);
+  }
+
   .cta {
-    position: absolute;
-    right: 7rem;
-    top: 48vh;
-    background-color: aquamarine;
-    display: flex;
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* -------------------------------------------------- Hero SECTION ---------------------------------------------- */
+
+  .hero-text {
+    display: none;
+  }
+
+  .hero-section {
+    height: 40vw;
+    background-position: 0 60%;
+  }
+
+  /* -------------------------------------------------- Services SECTION ---------------------------------------------- */
+
+  .services-container h1 {
+    font-size: 2rem;
+  }
+  .services-container h2 {
+    font-size: 2rem;
+  }
+  .services-container p {
+    font-size: 1rem;
+  }
+
+  .services {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 40%;
+  }
+
+  .service3 {
+    background: inherit;
+    color: var(--main-white);
+  }
+
+  .alternative-bg {
+    background-color: var(--services-color);
+    color: var(--main-black);
+  }
+
+  .service-logo {
+    font-size: 6vw;
+  }
+
+  /* -------------------------------------------------- ABOUT SECTION ---------------------------------------------- */
+  .about-section {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
+  .vertical-split1 {
     flex-direction: column;
     align-items: center;
   }
-} */
+
+  .horizontal-split-text {
+    width: 100%;
+  }
+
+  .horizontal-split-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .horizontal-split-text h2 {
+    font-size: 1.7rem;
+  }
+  .horizontal-split-text p {
+    font-size: 1rem;
+  }
+
+  .horizontal-split-image {
+    height: 15vh;
+    width: 100%;
+  }
+
+  .vertical-split-logo {
+    height: 35vh;
+    background-position: top;
+    display: none;
+  }
+
+  /* -------------------------------------------------- STRENGTHS SECTION ---------------------------------------------- */
+
+  .strengths {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .strengths-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .strengths-container h2 {
+    font-size: 1.7rem;
+  }
+  .strengths-container p {
+    font-size: 1rem;
+  }
+
+  .strength1,
+  .strength2,
+  .strength3 {
+    width: 100%;
+  }
+
+  /* -------------------------------------------------- FOOTer SECTION ---------------------------------------------- */
+
+  .footer-split-left {
+    padding: 2rem 2rem 3rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-logo {
+    height: 25vw;
+    width: 100%;
+    background-position: center;
+    margin-bottom: 2rem;
+  }
+  .footer-text {
+    margin-bottom: 2rem;
+  }
+  .footer-socials {
+    margin: 0;
+  }
+
+  .footer-split-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    top: 64px;
+  }
+
+  .services-section {
+    padding: 1.5rem 0rem;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+  .services-container h1 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .services-container h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 100%;
+  }
+
+  .service3 {
+    background: var(--services-color);
+    color: var(--main-black);
+  }
+
+  .alternative-bg {
+    background-color: inherit;
+    color: var(--main-white);
+  }
+
+  .service-logo {
+    display: none;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .vertical-split2 {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
