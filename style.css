@@ -957,6 +957,9 @@ input[type="checkbox"] {
     padding-top: 4rem;
     height: 17vh;
   }
+  .navigation-header h1 {
+    font-size: 1.6rem;
+  }
   .logo a {
     color: var(--main-white);
   }
@@ -1132,7 +1135,7 @@ input[type="checkbox"] {
     margin-bottom: 2rem;
   }
   .footer-text {
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0rem;
   }
   .footer-socials {
     margin: 0;
@@ -1164,14 +1167,54 @@ input[type="checkbox"] {
   .hide-service {
     display: none;
   }
+
+  /* -------------------------------------------------- contact form PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- contact form PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- contact form PAGE ---------------------------------------------- */
+  .contact-section {
+    padding: 2rem 3rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .input-left,
+  .input-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* -------------------------------------------------- Thankyou PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- Thankyou PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- Thankyou PAGE ---------------------------------------------- */
+
+  .thankyou-section {
+    padding: 2rem 3rem;
+  }
+  .thankyou-section h1 {
+    font-size: 1.8rem;
+  }
+  .thankyou-section p {
+    margin-bottom: 3rem;
+  }
+
+  .thankyou-company-logo {
+    height: 25vw;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .navigation-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .nav-links {
     top: 64px;
+  }
+
+  .hero-section {
+    height: 50vw;
+    background-position: 0 50%;
   }
 
   .services-section {
@@ -1220,5 +1263,116 @@ input[type="checkbox"] {
     margin-top: 2rem;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .footer-logo {
+    height: 40vw;
+  }
+
+  .footer-text h3 {
+    font-size: 1.5rem;
+  }
+  .footer-text h4 {
+    font-size: 1.2rem;
+  }
+
+  /* --------------------------------- VEHICLES PAGE --------------------------- */
+
+  .vehicles-section {
+    flex-direction: column;
+    padding: 2rem 3rem;
+  }
+
+  .vehicle {
+    text-align: center;
+  }
+  .vehicle-picture1,
+  .vehicle-picture2 {
+    height: 40vw;
+  }
+
+  /* --------------------------------- VEHICLES PAGE --------------------------- */
+  /* --------------------------------- VEHICLES PAGE --------------------------- */
+  /* --------------------------------- VEHICLES PAGE --------------------------- */
+
+  .corporateResp-section {
+    padding: 2rem 3rem;
+  }
+
+  .corporateResp-section h3 {
+    font-size: 1.5rem;
+  }
+  .corporateResp-section p {
+    font-size: 1rem;
+  }
+
+  /* -------------------------------------------------- contact form PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- contact form PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- contact form PAGE ---------------------------------------------- */
+  input[type="checkbox"] {
+    zoom: 1.4;
+  }
+
+  .checkbox1,
+  .checkbox2,
+  .checkbox3,
+  .checkbox4 {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox1 label,
+  .checkbox2 label,
+  .checkbox3 label,
+  .checkbox4 label {
+    font-size: 0.8rem;
+  }
+  .contact-section {
+    padding: 1rem 2rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .input-left label,
+  .input-right label,
+  .textarea-section label,
+  .kuljetustarve-label {
+    font-size: 1.5rem;
+  }
+
+  .formButton-section {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-button {
+    text-align: center;
+    padding: 3vw 25vw;
+  }
+
+  .checkbox-section {
+    margin-bottom: 1.5rem;
+  }
+
+  /* -------------------------------------------------- thankyou PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- thankyou PAGE ---------------------------------------------- */
+  /* -------------------------------------------------- thankyou PAGE ---------------------------------------------- */
+
+  .thankyou-section {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+  .thankyou-section h1 {
+    font-size: 1.6rem;
+    text-align: left;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .thankyou-section p {
+    font-size: 1rem;
+  }
+
+  .thankyou-company-logo {
+    height: 50vw;
   }
 }
