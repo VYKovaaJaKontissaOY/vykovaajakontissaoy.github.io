@@ -633,7 +633,7 @@ span {
 .contact-section {
   background-color: var(--darker-green-bg);
   color: var(--main-white);
-  padding: 4rem 20rem 6rem 20rem;
+  padding: 2rem 20rem 4rem 20rem;
 }
 
 label {
@@ -831,7 +831,7 @@ input[type="checkbox"] {
   }
 
   .contact-section {
-    padding: 4rem 8rem 6rem 8rem;
+    padding: 2rem 8rem 4rem 8rem;
   }
 
   .thankyou-section {
