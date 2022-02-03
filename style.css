@@ -152,7 +152,6 @@ span {
     url("photo-1597685204565-110abf469a1e.jfif");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   background-position: 0rem 75%;
 }
 
@@ -525,8 +524,6 @@ span {
 .service-explained-picture2,
 .service-explained-picture3,
 .service-explained-picture4 {
-  /* width: 30%;
-  height: 25vh; */
   height: 10vw;
   width: 50%;
   background-position: 0% 70%;
@@ -783,10 +780,6 @@ input[type="checkbox"] {
     font-size: 1.3rem;
   }
 
-  .hero-text {
-    /* background-color: red; */
-  }
-
   .logo {
     margin-left: 4rem;
   }
@@ -848,9 +841,6 @@ input[type="checkbox"] {
     font-size: 1.2rem;
   }
 
-  .hero-text {
-    /* background-color: blue; */
-  }
   .logo {
     margin-left: 2rem;
   }
@@ -918,11 +908,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1260px) {
-  /* HAMBURGER NAV SECTION */
-  .hero-text {
-    /* background-color: rgb(88, 88, 0); */
-  }
-
   .hero-text h2 {
     font-size: 2.2rem;
   }
